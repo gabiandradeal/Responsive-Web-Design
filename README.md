@@ -1,6 +1,7 @@
 # Responsive Web Design
 
 Este repositório contém os projetos práticos desenvolvidos para a disciplina de **Técnicas de Desenvolvimento de Interface Gráfica**.
+As instruções e requisitos para a execução destes projetos foram baseados nas diretrizes do curso **Design Responsivo para a Web**.
 
 ## Autores
 * Gabriela Almeida de Andrade
