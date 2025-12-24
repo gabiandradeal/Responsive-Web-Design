@@ -1,2 +1,20 @@
 # Responsive Web Design
-Desenvolvimento de designs responsivos utilizando HTML e CSS para o componente curricular Tecs. de Desenvolvimento de Interface Gráfica
+
+Este repositório contém os projetos práticos desenvolvidos para a disciplina de **Técnicas de Desenvolvimento de Interface Gráfica**.
+
+## Autores
+* Gabriela Almeida de Andrade
+* Georis Samuel Martins Gouveia
+
+## Projetos Desenvolvidos
+1. **Formulário de Pesquisa**: Interface focada em coleta de dados.
+2. **Página de Portfólio Pessoal**
+3. **Página de Tributo**: Homenagem a Ariano Suassuna
+
+## Linguagens e Tecnologias
+* **HTML5**: Estruturação semântica do conteúdo.
+* **CSS3**: Estilização e organização de layout.
+* **VS Code**: Ambiente de desenvolvimento.
+
+---
+Projetos desenvolvidos para fins acadêmicos.
