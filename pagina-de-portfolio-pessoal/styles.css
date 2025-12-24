@@ -1,0 +1,305 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-escuro: #1a1f3a;
+    --azul-medio: #2d3561;
+    --azul-claro: #4a5899;
+    --roxo: #7c3aed;
+    --roxo-claro: #a78bfa;
+    --texto-claro: #e0e7ff;
+    --branco: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--texto-claro);
+    background: linear-gradient(135deg, var(--azul-escuro) 0%, var(--azul-medio) 50%, var(--roxo) 100%);
+    line-height: 1.6;
+}
+
+/* Navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(26, 31, 58, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(124, 58, 237, 0.3);
+}
+
+#navbar nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, var(--azul-claro), var(--roxo-claro));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+#navbar a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+#navbar a:hover {
+    color: var(--roxo-claro);
+}
+
+/* Seção inicial */
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(26, 31, 58, 0.8) 0%, rgba(124, 58, 237, 0.6) 100%);
+}
+
+#welcome-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, var(--branco), var(--roxo-claro));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInUp 1s ease;
+}
+
+#welcome-section p {
+    font-size: 1.5rem;
+    color: var(--texto-claro);
+    max-width: 600px;
+    animation: fadeInUp 1.2s ease;
+}
+
+.team-container {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    text-align: center;
+    animation: fadeInUp 1.4s ease;
+}
+
+.photo-placeholder {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--azul-claro), var(--roxo));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    border: 4px solid var(--roxo-claro);
+    box-shadow: 0 8px 30px rgba(124, 58, 237, 0.4);
+    overflow: hidden;
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-placeholder span {
+    font-size: 4rem;
+    color: var(--branco);
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--branco);
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: var(--roxo-claro);
+}
+
+/* Projetos */
+#projects {
+    min-height: 100vh;
+    padding: 6rem 2rem 4rem;
+    background: rgba(26, 31, 58, 0.5);
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--branco);
+}
+
+.projects-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-tile {
+    background: rgba(45, 53, 97, 0.8);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid transparent;
+}
+
+.project-tile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(124, 58, 237, 0.5);
+    border-color: var(--roxo-claro);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, var(--azul-medio), var(--roxo));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--branco);
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--branco);
+}
+
+.project-content p {
+    color: var(--texto-claro);
+    margin-bottom: 1rem;
+}
+
+.project-content a {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: var(--roxo);
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.project-content a:hover {
+    background: var(--roxo-claro);
+}
+
+/* Entre em contato */
+#contact {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: rgba(26, 31, 58, 0.8);
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--branco);
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: var(--azul-medio);
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s;
+    border: 2px solid var(--roxo);
+}
+
+.contact-links a:hover {
+    background: var(--roxo);
+    transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Consulta de Mídia*/
+@media (max-width: 768px) {
+    #navbar ul {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    #welcome-section h1 {
+        font-size: 2rem;
+    }
+
+    #welcome-section p {
+        font-size: 1.2rem;
+    }
+
+    .team-container {
+        gap: 2rem;
+    }
+
+    .photo-placeholder {
+        width: 150px;
+        height: 150px;
+    }
+
+    #projects h2, #contact h2 {
+        font-size: 2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
