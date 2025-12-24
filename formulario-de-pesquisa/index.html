@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa para alunos de Computação da UEPB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Formulário de Pesquisa Geral para Alunos de Computação da UEPB</h1>
+        <p id="description">Obrigado por dedicar seu tempo para nos ajudar a melhorar a organização do Centro Acadêmico. Suas respostas são muito importantes para nós!</p>
+        
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Nome Completo</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Digite seu nome completo"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">E-mail</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="exemplo@aluno.uepb.edu.br"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Período cursando (opcional)</label>
+                <input 
+                    type="number" 
+                    id="number" 
+                    name="periodo" 
+                    min="1" 
+                    max="8" 
+                    placeholder="Período"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">Qual opção melhor descreve sua função atual?</label>
+                <select id="dropdown" name="role" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="student">Apenas Estudo</option>
+                    <option value="working">Estou Trabalhando</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="project">Estou envolvido em algum estágio e/ou projeto de extensão</option>
+                    <option value="prefer-not-say">Prefiro não dizer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Qual melhoria você considera mais urgente no contexto do curso?</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input 
+                            type="radio" 
+                            id="air-conditioner" 
+                            name="improvement" 
+                            value="air-conditioner"
+                        >
+                        <label for="air-conditioner">Instalação de aparelhos de ar condicionado no CCT</label>
+                    </div>
+                    <div class="radio-option">
+                        <input 
+                            type="radio" 
+                            id="lab" 
+                            name="improvement" 
+                            value="lab"
+                        >
+                        <label for="lab">Construção de novos laboratórios com computadores modernos</label>
+                    </div>
+                    <div class="radio-option">
+                        <input 
+                            type="radio" 
+                            id="concurso" 
+                            name="improvement" 
+                            value="concurso"
+                        >
+                        <label for="concurso">Efetivação de Professores</label>
+                    </div>
+                    <div class="radio-option">
+                        <input 
+                            type="radio" 
+                            id="schedule" 
+                            name="improvement" 
+                            value="schedule"
+                        >
+                        <label for="schedule">Mudança na grade curricular</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Qual o sistema operacional que você utiliza majoritariamente?</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input 
+                            type="radio" 
+                            id="windows" 
+                            name="os" 
+                            value="windows"
+                        >
+                        <label for="windows">Windows 🪟</label>
+                    </div>
+                    <div class="radio-option">
+                        <input 
+                            type="radio" 
+                            id="linux" 
+                            name="os" 
+                            value="linux"
+                        >
+                        <label for="linux">Linux 🐧</label>
+                    </div>
+                    <div class="radio-option">
+                        <input 
+                            type="radio" 
+                            id="macOS" 
+                            name="os" 
+                            value="macOS"
+                        >
+                        <label for="macOS">MacOS 🍎</label>
+                    </div>
+                    <div class="radio-option">
+                        <input 
+                            type="radio" 
+                            id="other" 
+                            name="os" 
+                            value="other"
+                        >
+                        <label for="other">Outro:</label>
+                        <input 
+                            type="text" 
+                            id="other-text"
+                            name="other-specify"
+                            placeholder="Especifique aqui"
+                            style="margin-left: 10px; flex: 1;"
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Quais dessas linguagens/ferramentas você domina?</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-option">
+                        <input 
+                            type="checkbox" 
+                            id="html" 
+                            name="languages" 
+                            value="html"
+                        >
+                        <label for="html">HTML</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input 
+                            type="checkbox" 
+                            id="css" 
+                            name="languages" 
+                            value="css"
+                        >
+                        <label for="css">CSS</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input 
+                            type="checkbox" 
+                            id="javascript" 
+                            name="languages" 
+                            value="javascript"
+                        >
+                        <label for="javascript">JavaScript</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input 
+                            type="checkbox" 
+                            id="sql" 
+                            name="languages" 
+                            value="sql"
+                        >
+                        <label for="sql">SQL</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input 
+                            type="checkbox" 
+                            id="python" 
+                            name="languages" 
+                            value="python"
+                        >
+                        <label for="python">Python</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input 
+                            type="checkbox" 
+                            id="java" 
+                            name="languages" 
+                            value="java"
+                        >
+                        <label for="java">Java</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input 
+                            type="checkbox" 
+                            id="git" 
+                            name="languages" 
+                            value="git"
+                        >
+                        <label for="git">Git</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input 
+                            type="checkbox" 
+                            id="react" 
+                            name="languages" 
+                            value="react"
+                        >
+                        <label for="react">React</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input 
+                            type="checkbox" 
+                            id="nodejs" 
+                            name="languages" 
+                            value="nodejs"
+                        >
+                        <label for="nodejs">Node.js</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Descreva sua experiência com o curso até agora</label>
+                <textarea 
+                    id="comments" 
+                    name="comments" 
+                    placeholder="Escreva seus comentários aqui..."
+                ></textarea>
+            </div>
+
+            <button type="submit" id="submit">Enviar Pesquisa</button>
+        </form>
+    </div>
+</body>
+</html>
