@@ -9,9 +9,9 @@ As instruções e requisitos para a execução destes projetos foram baseados na
 * Georis Samuel Martins Gouveia
 
 ## Projetos Desenvolvidos
-1. **Formulário de Pesquisa**: Interface focada em coleta de dados.
-2. **Página de Portfólio Pessoal**
-3. **Página de Tributo**: Homenagem a Ariano Suassuna
+1. **Formulário de Pesquisa**: Interface focada em coleta de dados sobre alunos de Computação da UEPB.
+2. **Página de Portfólio Pessoal**: Apresenta os perfis, projetos e contatos da dupla de desenvolvedores.
+3. **Página de Tributo**: Homenagem a Ariano Suassuna.
 
 ## Linguagens e Tecnologias
 * **HTML5**: Estruturação semântica do conteúdo.
